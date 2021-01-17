@@ -1,0 +1,789 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0147)https://www.gymmasteronline.com/portal/gm/booking/demo?from=www.gymmaster.com%2F&amp;session=eyJsYW5ndWFnZSI6ImVuIn0.XjiDsw.wOKJjx3laAI9ixxCDbXGcabs-5Q -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!-- From header.php -->	
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WJK7FTD');</script>
+<!-- End Google Tag Manager -->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GymMaster | Training Session</title>
+		<link href="../wp-content/themes/gymmaster/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../www.gymmasteronline.com/portal/static/css/custom.css" rel="stylesheet">
+		<link href="../www.gymmasteronline.com/portal/static/css/custom_gmusa.css" rel="stylesheet">
+		<link rel="icon" href="../wp-content/themes/gymmaster/images/favicon_gymmaster.ico">
+		<script src="../www.google.com/recaptcha/api_db1c6cf192da7116af5cb9ae70ac0768.js" async defer></script>
+		<script src="../wp-content/themes/gymmaster/js/jquery-latest.min.js"></script>
+		<script src="../wp-content/themes/gymmaster/js/bootstrap.min.js"></script>
+		<script src="../www.gymmasteronline.com/portal/static/3rdparty/jquery.validate.min.js"></script>
+
+		<script>
+			// fix for  old versions of IE
+			if (!window.console) {
+				window.console = {};
+				window.console.log = function () {};
+				window.console.info = function () {};
+				window.console.warn = function () {};
+				window.console.error = function () {};
+			}
+		</script>
+
+	</head>
+	<body>
+
+		<div id="wrap" class="logingm">
+			
+			
+
+			<div class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="../index.html"><img src="../wp-content/themes/gymmaster/images/gymmasterlogo.png" class="img-responsive" alt="GymMaster Logo"></a>
+					</div>
+				</div><!-- navbar-header -->
+			</div>
+			
+
+			<div class="col-xs-12 memberportal-container">
+				<div id="flash_div" class="flash_div col-xs-12">
+				</div>
+				
+				
+<div class="container gmenquiry">
+	<div class="page-header bookdemo col-xs-12"><!-- Page Title -->
+		<h1>Let us show you around</h1>
+		<p>
+			
+			Interested in seeing GymMaster in action?
+			
+		</p>
+		<p>
+			Tell us when you're available and we'll give you a training session, showing you how you can accomplish your goals using GymMaster.		</p>
+	</div>
+
+
+	<div class="page-header quotes col-xs-12">
+
+		<p>
+			"The software is fantastic, but the very best thing about GymMaster is the ongoing support." — Tom Bellman , Owner of TOMFIT Gym
+		</p>
+	</div>
+
+</div>
+
+<h1 class="page-title bookdemotitle">Schedule a Training Session</h1>
+<div class="container signup-box gmenquiry-content">
+	<form id="gm_enquiry_form" class="form-horizontal" role="form" method="post" novalidate="novalidate">
+		<div class="row member-detail" id="member-form">
+			<div class="form-group col-xs-12 col-sm-12 col-md-12">
+				<label class="col-xs-12 col-sm-3 col-md-5 col-lg-3 control-label">Your Name</label>
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<input id="name" class="form-control" type="text" placeholder="Your Name" value="" name="name" required="">
+				</div>
+			</div>
+
+			<div class="form-group col-xs-12 col-sm-12 col-md-12">
+				<label class="col-xs-12 col-sm-3 col-md-5 col-lg-3 control-label">Email Address</label>
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<input id="email" class="form-control" type="email" value="" placeholder="Email Address" name="email" required="">
+				</div>
+			</div>
+
+			<div class="form-group col-xs-12 col-sm-12 col-md-12">
+				<label class="col-xs-12 col-sm-3 col-md-5 col-lg-3 control-label">Phone</label>
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<div class="input-group">
+						<div class="input-group-btn countrycode-group">
+							
+							<select class="form-control" name="countrycode" id="countrycode" required="">
+								<option value=""></option>
+							</select>
+						</div>
+						<input id="phonecell" class="form-control" type="tel" value="" placeholder="Contact Number" name="phonecell" required="" data-errorplacement="#phonecell-error">
+					</div>
+					<div id="phonecell-error"></div>
+				</div>
+			</div>
+
+			<div class="form-group col-xs-12 col-sm-12 col-md-12">
+				<label class="col-xs-12 col-sm-3 col-md-5 col-lg-3 control-label">What features are you interested in?</label>
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<textarea id="notes" class="form-control" value="" rows="2" placeholder="Optional" name="notes"></textarea>
+					<p id="instructions" class="text-muted">Enter your details to show available times</p>
+				</div>
+			</div>
+
+
+			<div class="form-group col-xs-12 col-sm-12" style="text-align:center;">
+				<div id="recaptcha" style="display: inline-block;">
+				<div class="g-recaptcha form-group col-xs-12 col-sm-12" data-expired-callback="recaptcha_expired" data-sitekey="6Lc9e5oUAAAAAGjuq1urI000IMLA0aZihpckbd2t" data-callback="recaptcha_complete"></div>
+				</div>
+			</div>
+
+			<input type="text" id="staffid" name="staffid" value="" hidden="">
+			<input type="text" id="affiliate" name="affiliate" value="" hidden="">
+			<input type="text" id="bookingstart" name="bookingstart" hidden="">
+			<input type="text" id="bookingend" name="bookingend" hidden="">
+			<input type="text" id="day" name="day" hidden="">
+			<input type="text" id="referrer" name="referrer" value="https://www.gymmaster.com/" hidden="">
+			<input type="text" id="landingpage" name="landingpage" value="https://www.gymmaster.com/" hidden="">
+			<input type="text" id="promotion_id" name="promotion_id" value="" hidden="">
+
+			<div class="form-group none col-xs-12 col-sm-12 col-md-12" id="timezonediv">
+				<label class="col-xs-12 col-sm-3 col-md-5 col-lg-3 control-label">Timezone</label>
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<select class="form-control" id="timezonelist" name="timezone">
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group col-xs-12 col-sm-12 col-md-12 demotimes none" id="managertimes">
+
+				<div class="timelist col-xs-12 nopadding"></div>
+			</div>
+
+			<div class="form-group col-xs-12 col-sm-12 col-md-12 demotimes none" id="othertimes">
+				<div class="page-header scheduleavailability col-xs-12 col-sm-12 col-md-12">
+					<h3>Other Times</h3>
+				</div>
+
+				<div class="timelist col-xs-12 nopadding"></div>
+			</div>
+			<!-- Temporarily added a load more button. Pass it to me when you got it function properly. -->
+			<!-- &lt;div class=&quot;loadmore col-xs-12&quot;&gt;
+				&lt;a class=&quot;btn btn-default&quot;&gt;Load More&lt;/a&gt;
+			&lt;/div&gt; -->
+			
+						
+			<div id="loadingcontainer" class="loadingcontainer none col-xs-12 col-sm-12 col-md-12 clearfix">
+			  	<div class="loader">
+			    	<div class="loader--dot"></div>
+			    	<div class="loader--dot"></div>
+			    	<div class="loader--dot"></div>
+			    	<div class="loader--dot"></div>
+			    	<div class="loader--dot"></div>
+			    	<div class="loader--dot"></div>
+			    	<div class="loader--text">Loading...</div>
+			  	</div>
+			</div>
+			
+			
+
+			<div id="loading_message" class="none">
+				<span>Loading available times...</span>
+			</div>
+
+			<div id="checking_message" class="none">
+				<span>... Checking email address ...</span>
+			</div>
+		</div>
+
+	</form>
+</div>
+
+	<!-- Confirmation Modal -->
+	<div class="modal fade confirmation_modal" id="confirmation_modal" tabindex="-1" role="dialog" aria-labelledby="confirmation_modal_label">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content col-xs-12 col-sm-12">
+				<div class="modal-header col-xs-12 col-sm-12">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="confirmation_modal_label">Please confirm your booking</h4>
+				</div>
+				<div class="modal-body col-xs-12 col-sm-12">
+					<div id="modal-loadingcontainer" class="loadingcontainer none col-xs-12 col-sm-12 col-md-12 clearfix">
+						<div class="loader">
+							<div class="loader--dot"></div>
+							<div class="loader--dot"></div>
+							<div class="loader--dot"></div>
+							<div class="loader--dot"></div>
+							<div class="loader--dot"></div>
+							<div class="loader--dot"></div>
+							<div class="loader--text">Loading...</div>
+						</div>
+					</div>
+
+					<div id="modal-bookingcontent">
+						<div class="form-group col-xs-12 col-sm-12">
+							<label class="control-label col-xs-12 col-sm-4">Name</label>
+							<div class="input-text col-xs-12 col-sm-8">
+								<p type="text" class="form-control-static enquiry_name"></p>
+							</div>
+						</div>
+	
+						<div class="form-group col-xs-12 col-sm-12">
+							<label class="control-label col-xs-12 col-sm-4">Email Address</label>
+							<div class="input-text col-xs-12 col-sm-8">
+								<p type="text" class="form-control-static enquiry_email"></p>
+							</div>
+						</div>
+	
+						<div class="form-group col-xs-12 col-sm-12">
+							<label class="control-label col-xs-12 col-sm-4">Phone</label>
+							<div class="input-text col-xs-12 col-sm-8">
+								<p type="text" class="form-control-static enquiry_phone"></p>
+							</div>
+						</div>
+	
+						<div class="form-group col-xs-12 col-sm-12">
+							<label class="control-label col-xs-12 col-sm-4">Date</label>
+							<div class="input-text col-xs-12 col-sm-8">
+								<p type="text" class="form-control-static enquiry_date"></p>
+							</div>
+						</div>
+	
+						<div class="form-group col-xs-12 col-sm-12">
+							<label class="control-label col-xs-12 col-sm-4">Time</label>
+							<div class="input-text col-xs-12 col-sm-8">
+								<p type="text" class="form-control-static enquiry_time"></p>
+								<p type="text" class="form-control-static enquiry_end" hidden></p>
+							</div>
+						</div>
+	
+						<div class="form-group col-xs-12 col-sm-12">
+							<label class="control-label col-xs-12 col-sm-4">Software Consultant</label>
+							<div class="input-text col-xs-12 col-sm-8">
+								<p type="text" class="form-control-static enquiry_staff"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer col-xs-12 col-sm-12">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<a role="button" class="btn btn-success" id="submit_btn">Book Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Confirmation Modal -->
+
+
+				</div>
+			</div>
+		
+		<div class="push" id="push"></div>
+
+
+		<div id="footer" class="col-xs-12">
+			<div class="container-wrapper last col-xs-12 col-sm-12 col-md-12">
+				<div class="container">
+					<div class="col-xs-12 col-sm-12 col-md-12 text">
+						<h2>
+							<span class="h2-span-last">Book a Free Demonstration Today</span>
+						</h2>
+						
+						<h2>
+							<span class="h2-span-last"><a class="mail" href="mailto:sales@gymmaster.com?Subject=GymMasterEnquiry" target="_top" rel="noopener noreferrer">sales@gymmaster.com</a></span>
+						</h2>
+						
+						<div class="col-xs-12 col-md-12 phone-text">
+							<h3 class="phoneLabel">
+									<span class="h3-span-last">Phone</span>
+								</h3>
+								<h3 class="usa">
+									<span class="h3-span-last"> (415) 915 0375</span> 
+								</h3>
+						</div>
+					</div><!-- End of Text -->
+
+					<!-- &lt;div class=&quot;capterra col-xs-12&quot;&gt;
+						&lt;a href=&quot;http://www.capterra.com/club-management-software/reviews/57469/GymMaster/treshna%20Enterprises&quot; target=&quot;_capterra&quot; title=&quot;GymMaster -  4.0 out of 5 stars - 24 reviews&quot; rel=&quot;noopener noreferrer&quot;&gt;&lt;img src=&quot;https://assets.capterra.com/badge/9ae88b9d5b3dac23f733675a8117ca9b.png?v=2031003&amp;amp;p=57469&quot; border=&quot;0&quot;&gt;&lt;/a&gt;
+					&lt;/div&gt; -->
+				</div> <!-- container -->
+			</div><!-- container-wrapper -->
+			<div class="container-wrapper footer">
+				<div class="container">
+							
+					<div class="col-xs-12 col-md-12"> <!-- bottom section -->
+						<div class="col-xs-3 col-md-3 gymmasterlinks">
+							<h3><a href="../index.html">GymMaster</a></h3>
+							<ul>
+								<li><a href="../gym-access-control/index.html">24/7 Gym Access</a></li>
+								<li><a href="../point-of-sale-and-stock-control/index.html">Point of Sale</a></li>
+								<li><a href="../billing-management/index.html">Billing Integration</a></li>
+								<li><a href="../booking-and-scheduling/index.html">Booking and Scheduling</a></li>
+								<li><a href="../membership-management-2/index.html">Membership Management</a></li>
+								<li><a href="../member-retention/index.html">Member Retention</a></li>
+								<li><a href="../free-yourself-from-your-desk/index.html">Freedom From your Front Desk</a></li>
+								<li><a href="../website-integration/index.html">Website Integration</a></li>
+								<li><a href="../club-management-system/index.html">Club Management System</a></li>
+							</ul>
+						</div><!-- end of gymmasterlinks -->
+							
+						<div class="col-xs-3 col-md-3 otherlinks products">
+							<h3>Product</h3>
+							<ul>
+								<li><a href="../whats-new.html">What's New</a></li>
+								<li><a href="../try-gymmaster/index.html">Download Trial</a></li>
+								<li><a href="../e-book-php/index.html">Download E-Book</a></li>
+								<li><a href="../buy-gymmaster/index.html">Pricing</a></li>
+							</ul>
+						</div> <!-- end of other links -->
+
+						<div class="col-xs-3 col-md-3 otherlinks">
+							<h3>GymMaster Support</h3>
+							<ul>
+								<li><a href="../support/index.html">Support</a></li>
+								<li><a href="../installation-instructions/index.html">Installation Instruction</a></li>
+								<li><a href="../online-module-demo/index.html">Client Portal</a></li>
+								<li><a href="../gymmaster-online-module-setup/index.html">Client Portal Setup</a></li>
+								<li><a href="../gymmaster-requirements/index.html">Software Requirements</a></li>
+							</ul>
+						</div>
+
+						<div class="col-xs-3 col-md-3 otherlinks">
+							<h3>Company</h3>
+							<ul>
+								<li><a href="../about/index.html">About Us</a></li>
+								<li><a href="../contact-us/index.html">Contact Us</a></li>
+								<li><a href="../blog/index.html">Blog</a></li>
+								<li><a href="../terms-of-trade/index.html">Term of Trade</a></li>
+								<li><a href="https://www.treshna.com/">Treshna Enterprise</a></li> 
+							</ul>
+							<div class="col-xs-12 col-md-12 socialmedia">
+								<div class="col-xs-12 col-md-12 socialmedia-content">
+									<div class="list">
+										<ul>
+											<li><a href="https://www.facebook.com/GymMasterSoftware"><img src="../wp-content/themes/gymmaster/images/facebook.png" class="img-responsive img-circle"></a></li>
+											<li><a href="https://twitter.com/GYM_MASTER"><img src="../wp-content/themes/gymmaster/images/twitter.png" class="img-responsive img-circle"></a></li>
+											<li><a href="https://www.linkedin.com/groups/Gym-Master-3740094"><img src="../wp-content/themes/gymmaster/images/linkedin.png" class="img-responsive img-circle"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+
+						
+					</div><!-- bottom section -->
+				</div> <!-- /container -->
+			</div><!-- container-wrapper -->
+		</div>
+		
+<script>
+	
+
+var r_complete = false;
+function recaptcha_complete() {
+	r_complete = true;
+}
+	
+var r_loaded = false;
+function loaded_recaptcha() {
+	r_loaded = true;
+}
+
+function check_recaptcha() {
+	if (!r_loaded) return true;
+	if (!r_complete) ajax_exception('Please complete reCAPTCHA.');
+	return r_complete;
+}
+
+function recaptcha_append($form) {
+	if (!r_loaded) {
+		var $input = $('<input>')
+			.attr('name', 'g-recaptcha-load-failed')
+			.prop('hidden', true)
+			.val(1);
+		$form.append($input);
+	}
+}
+	
+function recaptcha_expired(){
+	$('#confirmation_modal').modal('hide');
+	ajax_exception('ReCAPTCHA has expired. Please complete again')
+}
+
+
+$( "#gm_enquiry_form" ).validate({
+	invalidHandler: function(form, validator) {
+        if (!validator.numberOfInvalids())
+            return;
+
+        $('html, body').animate({
+            scrollTop: $(validator.errorList[0].element).offset().top - 100
+        }, 0);
+    },
+	errorPlacement: function(error, element) {
+		var placement = element.data().errorplacement;
+		if (placement) $(placement).append(error);
+		else {
+			error.insertAfter(element);
+		}
+	}
+});
+
+$(document).on('click', '#more_times_btn', function() {
+	
+	if (can_submit) {
+		var serviceid = 6;
+		start_submit();
+		recaptcha_append($('#gm_enquiry_form'));
+		// serializeArray so can add another value
+		data = $('#gm_enquiry_form').serializeArray();
+		data.push({ name: "serviceid", value: serviceid });
+		data.push({ name: "marketing", value: marketing });
+		
+		$.ajax({
+		method: 'POST',
+		data: data,
+		url: "https://www.gymmasteronline.com/api/gm/booking/alternativetimes/",
+		success: function(data) {
+			if (data.error) {
+				done_submit();
+				ajax_exception(data.error);
+			}
+			else {
+				var d = {'username': data.result.username};
+				var params = encodeURI('?d=' + btoa(JSON.stringify(d)));
+				var baseUrl = 'https://www.gymmaster.com/demo-booked-noschedule/';
+
+				window.location.href = baseUrl + data.result.unique + params;
+			 }
+		},
+		error: function(e) {
+			done_submit();
+			ajax_exception('An internal error occurred submitting booking. Please try again later.');
+		}
+	});
+	}
+});
+
+$('#confirmation_modal').on('hide.bs.modal', function() {
+	$('.btn-submitbooking.disabled').removeClass('disabled');
+});
+
+function GetURLParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return decodeURIComponent(sParameterName[1]);
+        }
+    }
+}	
+
+	
+var can_submit = true;
+	
+function start_submit() {
+	can_submit = false;
+	$('#modal-loadingcontainer').removeClass('none');
+	$('#modal-bookingcontent').addClass('none');
+}
+
+function done_submit() {
+	can_submit = true;
+	$('#modal-loadingcontainer').addClass('none');
+	$('#modal-bookingcontent').removeClass('none');
+}
+
+$('#confirmation_modal #submit_btn').on('click', function() {
+	if (can_submit) {
+		var serviceid = 6;
+		start_submit();
+		$(this).addClass('disabled');
+		recaptcha_append($('#gm_enquiry_form'));
+		// serializeArray so can add another value
+		data = $('#gm_enquiry_form').serializeArray();
+		data.push({ name: "serviceid", value: serviceid });
+		$.ajax({
+		method: 'POST',
+		data: data,
+		url: "https://www.gymmasteronline.com/api/gm/booking/",
+		success: function(data) {
+			if (data.error) {
+				$('#confirmation_modal #submit_btn').removeClass('disabled');
+				done_submit();
+				ajax_exception(data.error);
+			}
+			else {
+				var d = {'name': data.result.username, 'date': data.result.date, 'time': data.result.time, 'timezone': data.result.timezone, 'salesname': data.result.salesname};
+				var params = encodeURI('?d=' + btoa(JSON.stringify(d)));
+				var baseUrl = 'https://www.gymmaster.com/training-booked/';
+
+				window.location.href = baseUrl + params;
+			 }
+		},
+		error: function(e) {
+			done_submit();
+			$('#confirmation_modal #submit_btn').removeClass('disabled');
+			ajax_exception('An internal error occurred submitting booking. Please try again later.');
+		}
+	});
+	}
+});
+	
+function getTimezones(timezone) {
+	$.ajax({
+		method: 'POST',
+		url: "https://www.gymmasteronline.com/api/gm/booking/timezones/",
+		success: function(data) {
+			for(var i = 0; i < data['result'].length; i += 1){
+				$('#timezonelist').append('<option value="' + data['result'][i] + '">' + data['result'][i] + '</option>')
+			}
+			$('#timezonelist').val(timezone);
+			// Get times once timezone is ready to go
+			if ($('#staffid').val()) getbookings_tz();
+		},
+		error: function(e) {
+			ajax_exception('An internal error occurred getting timezones. Please try again later.');
+		}
+	});
+}
+	
+function getPhonecodes(countrycode) {
+	$.ajax({
+		method: 'POST',
+		url: "https://www.gymmasteronline.com/api/gm/booking/phonecodes/",
+		success: function(data) {
+			for(var i = 0; i < data['result'].length; i += 1){
+				var ph = data['result'][i];
+				var selected = (ph['code'] == countrycode) ? 'selected' : '';
+				$('#countrycode').append('<option value="(+' + ph['callingCode'] + ')" ' + selected + '>' +  ph['code'] + ' (+' + ph['callingCode'] + ')</option>')
+			}
+		},
+		error: function(e) {
+			ajax_exception('An internal error occurred getting phonecodes. Please try again later.');
+		}
+	});
+}
+
+var marketing = '';
+$(document).ready(function(){
+	var promo = GetURLParameter('promo');
+	$('#promotion_id').val(promo);
+	var staffid = GetURLParameter('cmid');
+	$('#staffid').val(staffid);
+	var affiliate = GetURLParameter('aff');
+	$('#affiliate').val(affiliate);
+	// See #21126
+	var c = GetURLParameter('remktg');
+	if (c === 'action') marketing = 'Limited time offer shown on sign up - 2 months free';
+
+	$.ajax({
+		method: 'GET',
+		url: 'https://www.gymmasteronline.com/api/gm/location',
+		success: function(data) {
+			getTimezones(data.result.time_zone);
+			getPhonecodes(data.result.country_code);
+		},
+		error: function(e) {
+			console.log('Error getting location: ', e);
+			// Ignore, keep going
+			getTimezones();
+			getPhonecodes();
+		}
+	})
+})
+
+function getbookings_tz() {
+	var tz = $('#timezonelist').val();
+	var cmid = $('#staffid').val();
+	var serviceid = 6;
+	var cm_slots = 10;
+	var other_slots = 30;
+	$('#timezonediv').addClass('none');
+	$('.demotimes').addClass('none');
+	$('.demotimes .timelist').empty();
+	$('#instructions').addClass('none');
+	show_loading();
+	$.ajax({
+		method: 'GET',
+		data: {
+			'tz': tz,
+			'cmid': cmid,
+			'email': $('#gm_enquiry_form').find('input[name="email"]').val(),
+			'serviceid': serviceid
+		},
+		url: "https://www.gymmasteronline.com/api/gm/booking/times",
+		success: function(data) {
+			if (!data.error) {
+				if (data.result.times.times_manager.length > 0 || data.result.times.times_other.length > 0 ) {
+					if (data.result.times.times_manager.length > 0) {
+						$('.scheduleavailability').removeClass('none');
+						$('#managertimes .managername').text(data.result.times.manager);
+						populateTimes(data.result.times.times_manager, $('#managertimes .timelist'), cm_slots);
+					} else {
+						$('.scheduleavailability').addClass('none');
+					}
+
+					if (data.result.times.times_other.length > 0) {
+						populateTimes(data.result.times.times_other, $('#othertimes .timelist'), other_slots);
+					}
+				} else {
+					console.log('No times available, what do I do?')
+				}
+				hide_loading();
+				$('.demotimes').removeClass('none');
+				$('.notebox').removeClass('none');
+				// Makes sure timezone is set
+				// $('#timezonelist').val(data.tz);
+				$('#timezonediv').removeClass('none');
+			} else {
+				ajax_exception('Error occurred updating bookings.');
+			}
+		}
+	});
+}
+function populateTimes(times, elem, limit) {
+	var curr_date = null;
+	var manager = limit < 30 ? true : false;
+
+	for (var i = 0; i < Math.min(times.length, limit); i++) {
+		var res = times[i];
+		var row = $('<div class="boxbutton col-xs-12 col-sm-12 col-md-12">');
+		var a = $('<a type="button" href="javascript:void(0);" class="btn btn-success btn-submitbooking">')
+
+		if(manager && !curr_date){
+			elem.append(
+				$('<div class="page-header scheduleavailability col-xs-12"><h3>Times With ' + res.name + '</h3></div>')
+			)
+		}
+		else if(curr_date != res.day && !manager){
+			elem.append(
+				$('<div class="page-header scheduleavailability col-xs-12"><h3>' + res.dayname + ', ' + res.day + '</h3></div>')
+			)
+		}
+
+		var row = $('<div class="timelist-new col-xs-12 col-sm-6"></div>')
+		var content = $('<div class="col-xs-12 timelist-content nopadding"></div>')
+
+		var time = $('<div class="timelist-container pull-left col-xs-12 col-sm-6"></div>');
+		if(manager){
+			time
+				.append('<h4>' + res.bookingstart + '</h4>')
+				.append('<h5>' + res.dayname + ', ' + res.day + '</h5>');
+		} else {
+			time.append('<h4 style="margin-top: 20px;">' + res.bookingstart + '</h4>');
+		}
+		var a = $('<div class="col-xs-12 col-sm-6 pull-right booktime nopadding"></div>')
+				.append($('<a type="button" class="btn btn-success btn-submitbooking">Book with ' + res.name + '</a>')
+						.data('bookingstart', res.bookingstart_orig)
+						.data('bookingend', res.bookingend_orig)
+						.data('staffid', res.resourceid)
+						.data('day', res.day_orig)
+						.data('enquiry_date', res.day)
+						.data('enquiry_time', res.bookingstart)
+						.data('enquiry_staff', res.name));
+
+		a.find('.btn-submitbooking').on('click', function() {
+			console.log('clicking on a time!');
+
+			console.log($(this).data())
+			$(this).addClass('disabled');
+
+			if ($('#gm_enquiry_form').valid() && check_recaptcha()) {
+				$("#bookingstart").val($(this).data('bookingstart'));
+				$("#bookingend").val($(this).data('bookingend'));
+				$('#staffid').val($(this).data('staffid'));
+				$("#day").val($(this).data('day'));
+				$('#confirmation_modal .enquiry_name').text($('[name="name"]').val());
+				$('#confirmation_modal .enquiry_email').text($('[name="email"]').val());
+				$('#confirmation_modal .enquiry_phone').text($('#countrycode').val() + ' ' + $('[name="phonecell"]').val());
+				$('#confirmation_modal .enquiry_date').text($(this).data('enquiry_date'));
+				$('#confirmation_modal .enquiry_time').text($(this).data('enquiry_time'));
+				$('#confirmation_modal .enquiry_staff').text($(this).data('enquiry_staff'));
+				$('#confirmation_modal').modal('show');
+			} else {
+				$(this).removeClass('disabled');
+			}
+		});
+
+		content.append(time, a);
+		row.append(content);
+		elem.append(row);
+
+		curr_date = res.day;
+	}
+	// if($(schedule_row).children().size() > 0){
+	// 	elem.append(schedule_row)
+	// }
+}
+
+$('#timezonelist').on('change', function() {
+	getbookings_tz();
+});
+
+$('[name=email]').on('change', function() {
+	if (!$('#staffid').val()) {
+		$.ajax({
+			url: "https://www.gymmasteronline.com/api/gm/manager",
+			method: 'GET',
+			data: {'email': $('[name=email]').val()}
+		}).done(function(data) {
+			// Change if manager not already specified in URL
+			if (data.result) $('#staffid').val(data.result);
+			else $('#staffid').val('');
+			getbookings_tz();
+		}).fail(function() {
+			// Internal error, just grab the list anyway
+			getbookings_tz();
+		});
+	}
+});
+
+function escapeHTML(str) {
+var escapes = {
+	'&': '&amp;',
+	'<': '&lt;',
+	'>': '&gt;',
+	'"': '&quot;',
+	"'": '&#x27;'
+};
+return ('' + str).replace(/[&<>"']/g, function(match) {
+	return escapes[match];
+});
+}
+
+/* Overload string handling for capilisation */
+String.prototype.capitalise = function() {
+	return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
+
+$('form input[type=text]').on('blur', function() {
+	var v = $(this).val();
+	if (v) {
+		$(this).val(v.capitalise());
+	}
+});
+	
+// $('#phonecell').keydown(function(e) {
+// 	if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+// 		e.preventDefault();	
+// 	}
+// });
+	
+function ajax_exception(message) {
+	$('#flash_div .alert').remove();
+	if ($('.modal.in').length) elem = $('.modal.in .modal-body');
+	else elem = $('#flash_div');
+	elem.prepend('<div class="alert alert-danger alert-dismissable"><button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>'+escapeHTML(message)+'</div>');
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+}
+
+
+function show_loading() {
+	$('#loadingcontainer').removeClass('none');
+}
+
+function hide_loading() {
+	$('#loadingcontainer').addClass('none');
+}
+</script>
+</body></html>
